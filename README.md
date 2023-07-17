@@ -38,6 +38,10 @@ Source code for the portfolio page can be found here: [SVG-logo-maker index.js f
 
 
 
+https://github.com/IVignollesJeong/SVG-logo-maker/assets/131202032/3fe70ec9-8191-49fb-bdc9-f8b192ca43f3
+
+
+
 The command-line application functions as follows:
 
 - Upon downloading the code and running in VSCode, the user will initialize the application by using the commands "npm init -y", "npm i inquirer@8.2.4", and "npm i jest".
