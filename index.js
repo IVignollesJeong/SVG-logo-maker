@@ -3,6 +3,9 @@ const fs = require('fs');
 const { Circle, Square, Triangle } = require('./lib/shapes');
 const { prompt } = require('./lib/prompts');
 
+
+// prompt() will retrieve answers from prompts.js inquirer prompts, determine which shape was selected,
+// then generate the svg shape, text parameters, and svg file name.
 prompt()
   .then(answers => {
     const { shape, text, shapeColor, textColor } = answers;
@@ -18,7 +21,7 @@ prompt()
     } else if (shape === 'Square') {
       chosenShape = new Square();
       chosenShape.setColor(shapeColor);
-      chosenShapeText = `x="65" y="70" font-size="50"`;
+      chosenShapeText = `x="65" y="75" font-size="50"`;
       svgFileName = 'square';
     } else if (shape === 'Triangle') {
       chosenShape = new Triangle();
